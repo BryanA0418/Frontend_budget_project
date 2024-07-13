@@ -41,7 +41,7 @@ export default function(){
       <input placeholder="Item Name" type="text" tabIndex="2" id="item_name" required value={newTransaction.item_name} onChange={handletextChange}/>
     </fieldset>
     <fieldset>
-      <input placeholder="Amount(please enter '-' If deducting from account.)" type="text" tabIndex="3" id="amount" required value={newTransaction.amount} onChange={handletextChange}/>
+      <input placeholder="Amount(please enter '-' If deducting from account.)" type="Number" tabIndex="3" id="amount" required value={newTransaction.amount} onChange={handletextChange}/>
     </fieldset>
     <fieldset>
       <input placeholder="Catergory" type="Text" tabIndex="4" id="category" required value={newTransaction.category} onChange={handletextChange}/>

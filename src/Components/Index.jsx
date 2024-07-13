@@ -5,7 +5,22 @@ import { Link } from "react-router-dom"
 const API = "https://full-stack-project-ndjs.onrender.com"
 
 export default function Index(){
-    const [transactions, setTransactions] = useState([])
+    const [transactions, setTransactions] = useState([]);
+
+    const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      }
+
+    const fixedDate = (date) => {
+        date.toLocaleDateString("en-us", options)
+    }
+
+    const dateForm = new Intl.DateTimeFormat("en-us",{
+        dateStyle: "full"
+    })
     useEffect(() =>{
         fetch(`${API}/transactions`)
         .then((res) =>{
@@ -34,7 +49,7 @@ export default function Index(){
         <div className="list">
             <h2 className="h1_for_index">Balance:{currentBalance(transactions)}</h2>
             <ul>
-                {transactions.map(transaction => <Link to = {`/transactions/${transaction.id}`}><li className="indexli"><div className="indexli_date_name"><div className="transdate">{transaction.date}</div> <div>{transaction.item_name}</div></div> <div>{transaction.amount}</div></li></Link>)}
+                {transactions.map(transaction =>{let arrDate = new Date(transaction.date); return <Link to = {`/transactions/${transaction.id}`}><li className="indexli"><div className="indexli_date_name"><div className="transdate">{fixedDate(arrDate)}</div> <div>{transaction.item_name}</div></div> <div>{transaction.amount}</div></li></Link>})}
             </ul>
         </div>
     )
