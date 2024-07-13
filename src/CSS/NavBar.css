@@ -1,0 +1,22 @@
+.topBar{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+background-image: url("https://wallpapers.com/images/hd/blue-color-background-1920-x-1200-uvzif7jtuk60sk5r.jpg");
+height: 120px;
+}
+.new-button{
+    height:50px;
+    width: 200px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    border: solid 1px rgb(144, 140, 140);
+    border-radius: 5px;
+    color: rgb(249, 247, 247);
+    font-weight: bold
+}
+h1{
+    color: rgb(249, 247, 247);
+}

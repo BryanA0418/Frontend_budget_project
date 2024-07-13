@@ -1,0 +1,62 @@
+.show_container {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  #show_transaction{
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  .button_div{
+    display: flex;
+    justify-content: space-around;
+  }
+  .button_div button{
+    align-items: center;
+    appearance: button;
+    background-color: #0276FF;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: "RM Neue",sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    padding: 10px 21px;
+    text-align: center;
+    text-transform: none;
+    transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button_div button:active{
+    background-color: #006AE8;
+  }
+
+  .button_div button:hover {
+    background-color: #1C84FF;
+  }
+
+  .show_h1{
+    color: black;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  #show_transaction p{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }

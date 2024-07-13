@@ -1,0 +1,30 @@
+.indexli{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content:space-between;
+    border: none;
+    margin-left: 400px;
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 50px;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: solid 1px rgb(57, 56, 56); 
+    color: rgb(57, 56, 56)
+}
+
+.h1_for_index{
+    display: flex;
+    justify-content: center;
+    color:rgb(57, 56, 56)
+}
+
+.indexli_date_name{
+ display: flex;
+}
+
+.transdate{
+    margin-right: 50px;
+}
+
